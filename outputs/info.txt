@@ -1,0 +1,1 @@
+This folder will be used to temporarily store generated video. To be used later.
