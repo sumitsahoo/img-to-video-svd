@@ -67,7 +67,9 @@ class SVDUI:
                         height=400,
                     ),
                     gr.Textbox(
-                        label="Video URL", info="URL will be valid for 24hrs only"
+                        label="Video URL",
+                        info="URL will be valid for 24hrs only",
+                        show_copy_button=True,
                     ),
                 ],
                 examples=[
@@ -76,7 +78,7 @@ class SVDUI:
                     "./images/example/example3.png",
                 ],
                 flagging_options=None,
-                allow_flagging=False,
+                allow_flagging="never",
             )
 
         generate_code.queue().launch(
