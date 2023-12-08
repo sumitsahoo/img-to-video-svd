@@ -7,10 +7,6 @@ class SVDUtil:
         self.log = LogUtil()
 
     def generate_video_from_image(self, image_path):
-        return (
-            "https://replicate.delivery/pbxt/OzIIy45oJqK3JNPt70iU9ZaLzSNjrasOOil5xUMERfWq87fRA/000031.mp4",
-            "https://replicate.delivery/pbxt/OzIIy45oJqK3JNPt70iU9ZaLzSNjrasOOil5xUMERfWq87fRA/000031.mp4",
-        )
         self.log.info("Generating video from image")
         with open(image_path, "rb") as input_image:
             output = replicate.run(

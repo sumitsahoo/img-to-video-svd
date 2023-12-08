@@ -9,14 +9,14 @@ class SVDUI:
         self.svd_util = SVDUtil()
         self.log = LogUtil()
         self.theme = gr.themes.Base(
-            primary_hue="red",
-            secondary_hue="red",
+            primary_hue="purple",
+            secondary_hue="purple",
         ).set(
             # button_primary_background_fill="*secondary_500",
-            button_primary_background_fill="#2196F3",
+            button_primary_background_fill="#8D64A3",
             button_primary_background_fill_dark="*primary_500",
             button_primary_text_color="white",
-            loader_color="#2196F3",
+            loader_color="#8D64A3",
         )
 
     def upload_file(self, file_path):
