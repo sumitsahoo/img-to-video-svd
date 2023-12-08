@@ -3,6 +3,9 @@ Generate video from image using Stable Video Diffusion by StabilityAI and Replic
 Stable Video Diffusion: https://stability.ai/stable-video<br>
 Replicate: https://replicate.com/
 
+## Medium Article
+Drafting ...
+
 ## Dependency Installation
 
 You need `Python 3.12.0` installed in your system. If you are using `pyenv` then check the version using command: `pyenv version`
