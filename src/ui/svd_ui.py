@@ -79,7 +79,6 @@ class SVDUI:
                     "./images/example/example2.png",
                     "./images/example/example3.png",
                 ],
-                flagging_options=None,
                 allow_flagging="never",
             )
 
