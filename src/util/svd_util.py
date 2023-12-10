@@ -6,6 +6,9 @@ class SVDUtil:
     def __init__(self):
         self.log = LogUtil()
         self.model = "stability-ai/stable-video-diffusion:3f0457e4619daac51203dedb472816fd4af51f3149fa7a9e0b5ffcf1b8172438"
+
+        # Gradio UI can be customized to take below parameters as input
+
         # Use svd to generate 14 frames or svd_xt for 25 frames
         self.video_length = "14_frames_with_svd"  # Possible values: 14_frames_with_svd, 25_frames_with_svd_xt
         # Frames per second
