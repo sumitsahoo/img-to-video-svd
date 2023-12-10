@@ -46,7 +46,7 @@ class SVDUI:
             )
 
             gr.Textbox(
-                value="(SVD) Image-to-Video is a latent diffusion model trained to generate short video clips from an image conditioning. This model was trained to generate 14 frames at resolution 576x1024 given a context frame of the same size.",
+                value="(SVD) Image-to-Video is a latent diffusion model trained to generate short video clips from an image conditioning. This model was trained to generate 14 frames at resolution 576x1024 given a context frame of the same size. The generated videos are rather short (<= 4sec), and the model may not achieve perfect photorealism.",
                 show_label=False,
                 interactive=False,
                 container=False,
@@ -68,7 +68,7 @@ class SVDUI:
                     ),
                     gr.Textbox(
                         label="Video URL",
-                        info="URL will be valid for 24hrs only",
+                        info="URL will be valid for 24hrs only and content will be deleted after 24hrs",
                         show_copy_button=True,
                     ),
                 ],
