@@ -45,8 +45,8 @@ poetry export -f requirements.txt --output requirements.txt --without-hashes
 VS Code launch config file is also provided for easy debugging 🤓
 
 ## 🔑 Environment Variable
-There are 2 environment variable you can specify
-1. REPLICATE_API_TOKEN: This is your Replicate API key
+There are 2 environment variable you can specify.
+1. REPLICATE_API_TOKEN: This is your Replicate API key.
 2. GRADIO_SERVER_PORT: This is Gradio server port. This is optional if not specified in `launch` method.
 
 ## 🚢 Docker
