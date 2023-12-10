@@ -56,6 +56,7 @@ class SVDUI:
                 fn=self.svd_util.generate_video_from_image,
                 inputs=[
                     gr.Image(
+                        label="Select Image",
                         sources=["upload"],
                         type="filepath",
                         height=400,
@@ -63,6 +64,7 @@ class SVDUI:
                 ],
                 outputs=[
                     gr.Video(
+                        label="Generated Video",
                         autoplay=True,
                         height=400,
                     ),
