@@ -30,9 +30,13 @@ You need `Python 3.12.1` installed in your system. If you are using `pyenv` then
     ```python
     poetry run python main.py
     ```
+    or launch the app via VS Code debug menu. VS Code launch config file is also provided for easy debugging 🤓
+
+
 To update dependencies use: `poetry update`<br>
 To view virtual environment location, use: `poetry env info --path`<br>
 To generate `requirements.txt` using poetry, you need to have export plugin installed.<br>
+
 Install the plugin:
 ```bash
 poetry self add poetry-plugin-export
@@ -42,7 +46,7 @@ Once the plugin is installed, use `export` command to generate `requirements.txt
 poetry export -f requirements.txt --output requirements.txt --without-hashes
 ```
 
-VS Code launch config file is also provided for easy debugging 🤓
+
 
 ## 🔑 Environment Variable
 There are 2 environment variable you can specify.
