@@ -42,6 +42,11 @@ Once the plugin is installed, use `export` command to generate `requirements.txt
 poetry export -f requirements.txt --output requirements.txt --without-hashes
 ```
 
+## Environment Variable
+There are 2 environment variable you can specify
+1. REPLICATE_API_TOKEN: This is your Replicate API key
+2. GRADIO_SERVER_PORT: This is Gradio server port. This is optional if not specified in `launch` method.
+
 ## Docker
 
 If you are planning on deploying the app to cloud, you need a Docker image. To build the same use the `Dockerfile` provided. The multi-stage build makes sure the resulting image is smaller in size and only includes the libraries that is needed. Also the use of non-root user makes it more secure.<br>
@@ -56,6 +61,16 @@ docker buildx build --no-cache --platform linux/amd64 -t img2vid_latest .
 ```
 
 Once image is built, you can push the same to any cloud provider and use a serverless service to deploy the same easily.
+
+To run Docker image locally use below command:
+```bash
+docker run -it \
+-e GRADIO_SERVER_PORT=8080 \
+-e REPLICATE_API_TOKEN=your_key_here \
+-p 8080:8080 \
+--name img2vid \
+img2vid_latest
+```
 
 ## Attributions
 <a href="https://www.gradio.app/" title="gradio ui">UI is built using Gradio</a><br>
