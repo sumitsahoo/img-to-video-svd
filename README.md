@@ -8,7 +8,7 @@ Drafting ...
 
 ## Dependency Installation
 
-You need `Python 3.12.0` installed in your system. If you are using `pyenv` then check the version using command: `pyenv version`
+You need `Python 3.12.1` installed in your system. If you are using `pyenv` then check the version using command: `pyenv version`
 
 1. Install poetry
     ```bash
@@ -41,6 +41,21 @@ Once the plugin is installed, use `export` command to generate `requirements.txt
 ```bash
 poetry export -f requirements.txt --output requirements.txt --without-hashes
 ```
+
+## Docker
+
+If you are planning on deploying the app to cloud, you need a Docker image. To build the same use the `Dockerfile` provided. The multi-stage build makes sure the resulting image is smaller in size and only includes the libraries that is needed. Also the use of non-root user makes it more secure.<br>
+
+Build arm64 image (Make sure cloud deployment supports arm64 images):
+```bash
+docker build --no-cache -t img2vid_latest .
+```
+For amd64 image (most common and widely supported):
+```bash
+docker buildx build --no-cache --platform linux/amd64 -t img2vid_latest .
+```
+
+Once image is built, you can push the same to any cloud provider and use a serverless service to deploy the same easily.
 
 ## Attributions
 <a href="https://www.gradio.app/" title="gradio ui">UI is built using Gradio</a><br>
