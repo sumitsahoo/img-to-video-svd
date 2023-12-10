@@ -2,7 +2,7 @@
 name = "img-to-video-svd"
 version = "1.0.0"
 description = "Image to video using stable video diffusion"
-authors = ["Sumit Sahoo <sumitsahoo1988@gmail.com>"]
+authors = ["Sumit Sahoo"]
 license = "MIT"
 readme = "README.md"
 
