@@ -1,12 +1,12 @@
-# IMG2VID
+# ℹ️ IMG2VID
 Generate video from image using Stable Video Diffusion by StabilityAI and Replicate.<br>
 Stable Video Diffusion: https://stability.ai/stable-video<br>
 Replicate: https://replicate.com/
 
-## Medium Article
+## 📖 Medium Article
 Drafting ...
 
-## Dependency Installation
+## 📦 Dependency Installation
 
 You need `Python 3.12.1` installed in your system. If you are using `pyenv` then check the version using command: `pyenv version`
 
@@ -42,12 +42,14 @@ Once the plugin is installed, use `export` command to generate `requirements.txt
 poetry export -f requirements.txt --output requirements.txt --without-hashes
 ```
 
-## Environment Variable
+VS Code launch config file is also provided for easy debugging 🤓
+
+## 🔑 Environment Variable
 There are 2 environment variable you can specify
 1. REPLICATE_API_TOKEN: This is your Replicate API key
 2. GRADIO_SERVER_PORT: This is Gradio server port. This is optional if not specified in `launch` method.
 
-## Docker
+## 🚢 Docker
 
 If you are planning on deploying the app to cloud, you need a Docker image. To build the same use the `Dockerfile` provided. The multi-stage build makes sure the resulting image is smaller in size and only includes the libraries that is needed. Also the use of non-root user makes it more secure.<br>
 
@@ -72,12 +74,12 @@ docker run -it \
 img2vid_latest
 ```
 
-## Attributions
+## 🙏🏻 Attributions
 <a href="https://www.gradio.app/" title="gradio ui">UI is built using Gradio</a><br>
 <a href="https://www.flaticon.com/free-icons/video" title="video icons">Video icons created by Prosymbols Premium - Flaticon</a><br>
 <a href="https://basicappleguy.com/basicappleblog/os-x-rancho-cucamonga" title="wallpaper">Rancho Cucamonga wallpaper by thebasicappleguy</a>
 
-## License
+## 📜 License
 
 MIT License
 
