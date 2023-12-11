@@ -4,7 +4,7 @@ Stable Video Diffusion: https://stability.ai/stable-video<br>
 Replicate: https://replicate.com/
 
 ## 📖 Medium Article
-Drafting ...
+Here is the Medium Article: https://medium.com/@sumitsahoo/stable-video-diffusion-with-replicate-7bdd3ff3879e
 
 ## 📦 Dependency Installation
 
