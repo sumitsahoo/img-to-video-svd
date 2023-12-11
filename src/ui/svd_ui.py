@@ -32,10 +32,10 @@ class SVDUI:
         """
 
         with gr.Blocks(
-            title="Generate UI Code",
+            title="IMG2VID",
             theme=self.theme,
             # css=custom_css,
-        ) as generate_code:
+        ) as img_to_vid:
             gr.Image(
                 "./images/logo.svg",
                 height=80,
@@ -82,7 +82,7 @@ class SVDUI:
                 allow_flagging="never",
             )
 
-        generate_code.queue().launch(
+        img_to_vid.queue().launch(
             favicon_path="./images/favicon.ico",
             debug=False,
             show_api=False,
