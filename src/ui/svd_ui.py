@@ -70,7 +70,7 @@ class SVDUI:
                     ),
                     gr.Textbox(
                         label="Video URL",
-                        info="URL will be valid for 24hrs only and content will be deleted after 24hrs",
+                        info="URL will be valid for 1 hour only and content will be deleted after this",
                         show_copy_button=True,
                     ),
                 ],
