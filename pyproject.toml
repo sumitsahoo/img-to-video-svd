@@ -9,7 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 python-dotenv = "^1.0.0"
-gradio = "^4.8.0"
+gradio = "^4.9.0"
 rich = "^13.7.0"
 setuptools = "^69.0.2"
 replicate = "^0.21.1"
