@@ -19,10 +19,6 @@ class SVDUI:
             loader_color="#8D64A3",
         )
 
-    def upload_file(self, file_path):
-        svd_response = self.svd_util.generate_video_from_image(file_path)
-        return svd_response
-
     def launch_ui(self):
         # Check if index is built
 
