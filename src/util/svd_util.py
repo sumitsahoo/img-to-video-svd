@@ -1,5 +1,6 @@
-from src.util.log_util import LogUtil
 import replicate
+
+from src.util.log_util import LogUtil
 
 
 class SVDUtil:

@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+
 from src.ui.svd_ui import SVDUI
 
 # Launch the Gradio UI

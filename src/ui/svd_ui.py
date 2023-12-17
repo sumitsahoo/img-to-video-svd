@@ -1,7 +1,7 @@
 import gradio as gr
-import os
-from src.util.svd_util import SVDUtil
+
 from src.util.log_util import LogUtil
+from src.util.svd_util import SVDUtil
 
 
 class SVDUI:
@@ -41,12 +41,14 @@ class SVDUI:
                 show_download_button=False,
             )
 
-            gr.Textbox(
-                value="(SVD) Image-to-Video is a latent diffusion model trained to generate short video clips from an image conditioning. This model was trained to generate 14 frames at resolution 576x1024 given a context frame of the same size. The generated videos are rather short (<= 4sec), and the model may not achieve perfect photorealism.",
-                show_label=False,
-                interactive=False,
-                container=False,
-            ),
+            (
+                gr.Textbox(
+                    value="(SVD) Image-to-Video is a latent diffusion model trained to generate short video clips from an image conditioning. This model was trained to generate 14 frames at resolution 576x1024 given a context frame of the same size. The generated videos are rather short (<= 4sec), and the model may not achieve perfect photorealism.",
+                    show_label=False,
+                    interactive=False,
+                    container=False,
+                ),
+            )
 
             gr.Interface(
                 fn=self.svd_util.generate_video_from_image,
