@@ -34,6 +34,11 @@ You need `Python 3.12.1` installed in your system. If you are using `pyenv` then
 
 
 To update dependencies use: `poetry update`<br>
+If you want to update dependencies in `pyproject.toml`, then you need to install plugin `poetry-plugin-up`. Use command below:
+```
+poetry self add poetry-plugin-up
+```
+Once installed, use command `poetry up` to install updates and edit `pyproject.toml` automatically.<br>
 To view virtual environment location, use: `poetry env info --path`<br>
 To generate `requirements.txt` using poetry, you need to have export plugin installed.<br>
 
