@@ -8,7 +8,7 @@ Here is the Medium Article: https://medium.com/@sumitsahoo/stable-video-diffusio
 
 ## 📦 Dependency Installation
 
-You need `Python 3.12.1` installed in your system. If you are using `pyenv` then check the version using command: `pyenv version`
+You need `Python 3.12.7` installed in your system. If you are using `pyenv` then check the version using command: `pyenv version`
 
 1. Install poetry
     ```bash
