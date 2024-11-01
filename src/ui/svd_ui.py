@@ -8,16 +8,18 @@ class SVDUI:
     def __init__(self):
         self.svd_util = SVDUtil()
         self.log = LogUtil()
-        self.theme = gr.themes.Base(
-            primary_hue="purple",
-            secondary_hue="purple",
-        ).set(
-            # button_primary_background_fill="*secondary_500",
-            button_primary_background_fill="#8D64A3",
-            button_primary_background_fill_dark="*primary_500",
-            button_primary_text_color="white",
-            loader_color="#8D64A3",
-        )
+        # self.theme = gr.themes.Base(
+        #     primary_hue="purple",
+        #     secondary_hue="purple",
+        # ).set(
+        #     # button_primary_background_fill="*secondary_500",
+        #     button_primary_background_fill="#8D64A3",
+        #     button_primary_background_fill_dark="*primary_500",
+        #     button_primary_text_color="white",
+        #     loader_color="#8D64A3",
+        # )
+
+        self.theme = gr.themes.Default(primary_hue=gr.themes.colors.purple, secondary_hue=gr.themes.colors.gray, font=[gr.themes.GoogleFont("Open Sans"), "Arial", "sans-serif"])
 
     def launch_ui(self):
         # Check if index is built
@@ -33,12 +35,14 @@ class SVDUI:
             # css=custom_css,
         ) as img_to_vid:
             gr.Image(
-                "./images/logo.svg",
+                "./images/logo.png",
                 height=80,
                 width=400,
                 interactive=False,
                 container=False,
                 show_download_button=False,
+                type="filepath",
+                show_fullscreen_button=False,
             )
 
             (
@@ -77,7 +81,7 @@ class SVDUI:
                     "./images/example/example2.png",
                     "./images/example/example3.png",
                 ],
-                allow_flagging="never",
+                flagging_mode="never",
             )
 
         img_to_vid.queue().launch(
